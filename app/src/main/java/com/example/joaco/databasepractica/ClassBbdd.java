@@ -57,10 +57,23 @@ public abstract class ClassBbdd extends RoomDatabase {
                         ModelClass dos = new ModelClass("2016-2017","Clase3","22200","David","7.45");
                         ModelClass tres = new ModelClass("2014-2015","Clase4","550","Maraca","9.455");
                         ModelClass cuatro = new ModelClass("2013-2014","Clase5","11000","Luna","5.44");
+                        ModelClass cinco = new ModelClass("2017-2018","Clase6","2000","Jaime","6.45");
+                        ModelClass seis = new ModelClass("2016-2017","Clase7","22200","David","7.45");
+                        ModelClass siete = new ModelClass("2014-2015","Clase8","550","Maraca","9.455");
+                        ModelClass ocho = new ModelClass("2013-2014","Clase9","11000","Luna","5.44");
+                        ModelClass nueve = new ModelClass("2017-2018","Clase10","2000","Jaime","6.45");
+                        ModelClass diez = new ModelClass("2016-2017","Clase11","22200","David","7.45");
                         data.add(uno);
                         data.add(dos);
                         data.add(tres);
                         data.add(cuatro);
+                        data.add(cinco);
+                        data.add(seis);
+                        data.add(siete);
+                        data.add(ocho);
+                        data.add(nueve);
+                        data.add(diez);
+
 
                         mDao.deleteAll();
 
