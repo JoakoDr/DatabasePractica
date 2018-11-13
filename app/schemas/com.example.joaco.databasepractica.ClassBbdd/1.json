@@ -1,0 +1,57 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f016743b8b6b0b92bca61112f96d3223",
+    "entities": [
+      {
+        "tableName": "class",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Year` TEXT NOT NULL, `Name` TEXT, `People` TEXT NOT NULL, `Teacher` TEXT NOT NULL, `Average` TEXT NOT NULL, PRIMARY KEY(`Year`))",
+        "fields": [
+          {
+            "fieldPath": "year",
+            "columnName": "Year",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "Name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nPeople",
+            "columnName": "People",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tutor",
+            "columnName": "Teacher",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "average",
+            "columnName": "Average",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Year"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"f016743b8b6b0b92bca61112f96d3223\")"
+    ]
+  }
+}
